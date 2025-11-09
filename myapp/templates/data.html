@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>📊 Data Files</h1>
+<p>Descarga los datasets utilizados en el proyecto:</p>
+
+<div style="margin-top: 20px;">
+  <h3>Atraction Data_reviews</h3>
+  <a href="{% static 'data/attraction_data_reviews.csv' %}" download>
+    <button>Descargar reviews.csv</button>
+  </a>
+
+  <h3>Data Metadata</h3>
+  <a href="{% static 'data/attractions_data_metadata.csv' %}" download>
+    <button>Descargar metadata.csv</button>
+  </a>
+
+  <h3>List of atractions</h3>
+  <a href="{% static 'data/attractions_list.csv' %}" download>
+    <button>Descargar List_of_attractions.csv</button>
+  </a>
+</div>
+{% endblock %}
