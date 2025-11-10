@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Project Deliverables{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-6 py-12">
+  <h1 class="text-4xl font-extrabold text-center text-indigo-700 mb-12">What YOU should deliver!</h1>
+  <p class="text-gray-700 text-lg mb-12 text-center">
+    Overview of expected deliverables for the project, with clear guidelines and actionable points.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Python Source Code -->
+    <div class="bg-indigo-50 p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+      <div class="text-indigo-700 text-3xl mb-4">🐍</div>
+      <h2 class="text-xl font-bold mb-2 text-indigo-800">Python Source Code</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Jupyter Notebook (.ipynb) or Python (.py) files.</li>
+        <li>Code fully commented for clarity.</li>
+        <li>Identify CRISP-DM phases:
+          <ul class="list-disc ml-6 mt-1">
+            <li>Business Understanding</li>
+            <li>Data Understanding</li>
+            <li>Data Preparation</li>
+            <li>Modeling</li>
+            <li>Evaluation</li>
+            <li>Deployment / Insights</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- PowerPoint Presentation -->
+    <div class="bg-green-50 p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+      <div class="text-green-700 text-3xl mb-4">📊</div>
+      <h2 class="text-xl font-bold mb-2 text-green-800">PowerPoint Presentation</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Target audience: non-technical.</li>
+        <li>Include:
+          <ul class="list-disc ml-6 mt-1">
+            <li>Project title & context</li>
+            <li>Key visualizations</li>
+            <li>Main findings & recommendations</li>
+          </ul>
+        </li>
+        <li>Slides should be clean, simple, and readable.</li>
+      </ul>
+    </div>
+
+    <!-- Report -->
+    <div class="bg-yellow-50 p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+      <div class="text-yellow-700 text-3xl mb-4">📄</div>
+      <h2 class="text-xl font-bold mb-2 text-yellow-800">Report</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+        <li>Maximum 20 pages, font size ≥10.</li>
+        <li>Audience: non-technical.</li>
+        <li>Include:
+          <ul class="list-disc ml-6 mt-1">
+            <li>Executive summary</li>
+            <li>Background / context</li>
+            <li>Problem description</li>
+            <li>Methods (brief)</li>
+            <li>Results & discussion</li>
+            <li>Insights & actionable recommendations</li>
+            <li>Appendices for details or additional data</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+

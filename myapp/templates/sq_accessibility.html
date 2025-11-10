@@ -1,6 +1,69 @@
 {% extends 'base.html' %}
-{% block title %}Sq Accessibility{% endblock %}
+
+{% block title %}Accessibility & Safety Insights{% endblock %}
+
 {% block content %}
-  <h1>Sq Accessibility</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q11 -->
+  <section id="q11" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q11. What accessibility issues are most reported (mobility, stroller, visual, audio)?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To ensure compliance with accessibility standards and advance inclusive tourism goals for all visitors.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Apply keyword or LLM-based tagging for terms like “wheelchair”, “lift”, “stairs”, “stroller”, “ramp”.</li>
+      <li>Measure sentiment and complaint frequency for each accessibility theme.</li>
+      <li>Map recurring issues to specific attractions or facilities for prioritization.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Accessibility action plan per attraction with issue severity levels.</li>
+      <li>Heatmap of accessibility mentions across categories (mobility, vision, hearing, family access).</li>
+      <li>Compliance score dashboard highlighting areas requiring intervention.</li>
+    </ul>
+
+    <div id="chart-q11" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for accessibility issues heatmap.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q12 -->
+  <section id="q12" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q12. Are there safety, cleanliness, or maintenance concerns?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To maintain public trust, protect reputation, and ensure operational excellence in all visitor environments.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Extract topics and keywords related to “theft”, “dirty”, “broken”, “dangerous”, “unclean”.</li>
+      <li>Perform severity scoring based on sentiment polarity and frequency of mentions.</li>
+      <li>Identify temporal or spatial clusters of maintenance or safety incidents.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Incident trend dashboard with severity levels over time.</li>
+      <li>Attraction-level cleanliness and safety report cards.</li>
+      <li>Automated escalation alerts for recurrent or severe complaints.</li>
+    </ul>
+
+    <div id="chart-q12" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for safety and maintenance incident dashboard.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}
+

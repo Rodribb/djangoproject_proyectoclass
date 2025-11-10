@@ -1,6 +1,89 @@
 {% extends 'base.html' %}
-{% block title %}Sq Visitor Satisfaction{% endblock %}
+
+{% block title %}Visitor Satisfaction Analysis{% endblock %}
+
 {% block content %}
-  <h1>Sq Visitor Satisfaction</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q1 -->
+  <section id="q1" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q1. What is the overall satisfaction by attraction and category?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">To prioritize funding, maintenance, and promotion efforts.</p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Star rating distribution.</li>
+      <li>Median and mean ratings.</li>
+      <li>Confidence intervals for statistical reliability.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Ranked league tables by attraction and category.</li>
+      <li>Control charts for temporal stability.</li>
+      <li>Flags for underperforming attractions.</li>
+    </ul>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q2 -->
+  <section id="q2" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q2. What are the top drivers of satisfaction and dissatisfaction?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">To identify and act on the root causes of visitor sentiment (e.g., staff behavior, queues, cleanliness, price).</p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Natural Language Processing (NLP) on reviews using topic modeling and sentiment analysis per topic.</li>
+      <li>SHAP analysis on rating regression to interpret which variables most influence satisfaction.</li>
+      <li>Correlation of textual and numerical variables (e.g., cleanliness, service, waiting time).</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Driver importance chart (ranking of satisfaction drivers).</li>
+      <li>Topic–sentiment heatmap (themes vs average sentiment).</li>
+      <li>List of actionable insights and improvement priorities.</li>
+    </ul>
+
+    <div class="bg-gray-100 rounded-xl p-4 mt-6">
+      <h3 class="font-semibold mb-2">Technical Example</h3>
+      <p>Use <code>scikit-learn</code> or <code>spaCy</code> for topic extraction, and <code>SHAP</code> for model interpretation of rating predictions.</p>
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q3 -->
+  <section id="q3" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q3. How do satisfaction levels change over time and by season?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">To anticipate seasonal issues such as crowding, heat, or service overload.</p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Monthly time series of ratings and sentiment.</li>
+      <li>Change-point detection to identify structural shifts in satisfaction trends.</li>
+      <li>Seasonal comparison (e.g., summer vs winter patterns).</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Seasonal trend lines with confidence bands.</li>
+      <li>Alerts on sudden drops in satisfaction.</li>
+      <li>Interactive dashboard with category or location filters.</li>
+    </ul>
+
+    <div id="chart-q3" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for time-series satisfaction chart (e.g., monthly trend line with confidence intervals).
+    </div>
+  </section>
+</div>
 {% endblock %}
+
+

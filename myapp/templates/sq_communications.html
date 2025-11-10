@@ -1,6 +1,67 @@
 {% extends 'base.html' %}
-{% block title %}Sq Communications{% endblock %}
+
+{% block title %}Benchmarking & Comparative Analysis{% endblock %}
+
 {% block content %}
-  <h1>Sq Communications</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q17 -->
+  <section id="q17" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q17. Which Lisbon attractions are over- or under-performing vs their peer group?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To enable fair comparisons and identify performance improvement targets.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Define peer sets by category, visitor volume, or price tier.</li>
+      <li>Compute z-scores and apply Bayesian shrinkage for reliability.</li>
+      <li>Highlight attractions significantly above or below expectations.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Peer-adjusted ranking tables for attractions.</li>
+      <li>Watchlist of under-performing sites needing intervention.</li>
+    </ul>
+
+    <div id="chart-q17" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for peer-adjusted performance chart.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q18 -->
+  <section id="q18" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q18. How does Lisbon compare with European peers on similar categories? <span class="italic">(optional if external benchmark available)</span></h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To assess city-level positioning and identify competitive gaps or transferable best practices.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>If comparable external data are available, mirror metrics to compare Lisbon vs. EU peer cities.</li>
+      <li>Analyze gaps in satisfaction, amenities, and visitor experience.</li>
+      <li>Identify best-practice examples that could be adapted locally.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Competitive gap charts showing Lisbon vs European peers.</li>
+      <li>Recommendations for adopting best practices from high-performing cities.</li>
+    </ul>
+
+    <div id="chart-q18" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for Lisbon vs European peers benchmarking charts.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}
+

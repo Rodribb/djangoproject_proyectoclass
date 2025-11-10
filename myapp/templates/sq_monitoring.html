@@ -1,6 +1,66 @@
 {% extends 'base.html' %}
-{% block title %}Sq Monitoring{% endblock %}
+
+{% block title %}City-wide Performance & Investment Insights{% endblock %}
+
 {% block content %}
-  <h1>Sq Monitoring</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q21 -->
+  <section id="q21" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q21. Can we create a live quality-of-experience index for the city?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To monitor overall city performance and manage visitor experience on an ongoing basis.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Develop a composite index integrating ratings, crowding, safety, and accessibility metrics.</li>
+      <li>Update the index in near-real time as new review and operational data arrive.</li>
+      <li>Visualize trends for decision-makers and stakeholders.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Monthly dashboard showing the quality-of-experience index over time.</li>
+      <li>Threshold alerts for interventions when performance dips below expectations.</li>
+    </ul>
+
+    <div id="chart-q21" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for live quality-of-experience index chart.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q22 -->
+  <section id="q22" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q22. Where should Lisbon invest next quarter/year for maximum impact?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To prioritize budget allocation for interventions with the highest return on investment.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Use an Impact × Effort matrix combining driver importance, volume, and expected benefit.</li>
+      <li>Score and rank potential interventions based on predicted ROI.</li>
+      <li>Incorporate operational constraints and feasibility factors.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Prioritized roadmap of interventions with estimated costs and expected impact.</li>
+      <li>Visual guidance for planning quarterly or annual investment cycles.</li>
+    </ul>
+
+    <div id="chart-q22" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for investment priority dashboard.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}

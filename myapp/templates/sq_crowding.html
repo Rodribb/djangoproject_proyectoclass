@@ -1,6 +1,99 @@
 {% extends 'base.html' %}
-{% block title %}Sq Crowding{% endblock %}
+
+{% block title %}Crowding & Queue Analysis{% endblock %}
+
 {% block content %}
-  <h1>Sq Crowding</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q4 -->
+  <section id="q4" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q4. Which attractions most frequently face overcrowding or queue complaints?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To optimize queue management, staffing allocation, and visitor flow using data-driven insights.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Keyword or LLM-based tagging for terms such as “queue”, “wait”, or “crowd”.</li>
+      <li>Tracking topic frequency and sentiment over time.</li>
+      <li>Identifying attractions with recurrent crowding mentions.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Heatmap of crowding mentions by attraction and date.</li>
+      <li>Table of peak hours and days with the highest crowd-related complaints.</li>
+      <li>Priority list for interventions (e.g., timed entries, better signage).</li>
+    </ul>
+
+    <div id="chart-q4" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for crowding frequency heatmap visualization.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q5 -->
+  <section id="q5" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q5. What is the relationship between crowding mentions and ratings?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To quantify the negative impact of crowding on overall visitor satisfaction.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Correlation analysis between crowding topic intensity and average ratings.</li>
+      <li>Regression or panel models to estimate causal effects.</li>
+      <li>Control for attraction type, time, and visitor volume.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Elasticity estimate showing rating decrease per increase in crowding mentions.</li>
+      <li>Marginal impact plots visualizing the crowding–rating relationship.</li>
+      <li>Quantified “cost of crowding” metric for management prioritization.</li>
+    </ul>
+
+    <div id="chart-q5" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for regression plots or correlation charts between crowding and ratings.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q6 -->
+  <section id="q6" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q6. When do negative experiences cluster (day of week, hour, month)?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To inform adjustments in opening hours, staff schedules, and capacity caps for better visitor distribution.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Extract temporal features from review timestamps (day, hour, month).</li>
+      <li>Perform seasonality decomposition to detect recurring negative peaks.</li>
+      <li>Link results with external factors such as holidays or weather conditions.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Calendar heatmaps showing intensity of negative reviews by time period.</li>
+      <li>Trend plots highlighting high-risk days and hours.</li>
+      <li>Operational recommendations for schedule or capacity optimization.</li>
+    </ul>
+
+    <div id="chart-q6" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for temporal clustering and calendar heatmap visualizations.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}
+

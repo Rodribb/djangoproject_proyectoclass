@@ -11,15 +11,12 @@ def about(request):
 
 def home(request):
     return render(request, 'home.html')
-
-def kore_kpis(request):
-    return render(request, 'kore_kpis.html')
+def key_business_questions(request):
+    return render(request, 'key_business_questions.html')
 
 def data(request):
     return render(request, 'data.html')
 
-def key_business_questions(request):
-    return render(request, 'key_business_questions.html')
 
 def deliverables(request):
     return render(request, 'deliverables.html')
@@ -57,3 +54,5 @@ def sq_communications(request):
 def sq_monitoring(request):
     return render(request, 'sq_monitoring.html')
 
+def kore_kpis(request):
+    return render(request,'kore_kpis.html')

@@ -1,6 +1,68 @@
 {% extends 'base.html' %}
-{% block title %}Sq Value For Money{% endblock %}
+
+{% block title %}Value Perception & Add-On Analysis{% endblock %}
+
 {% block content %}
-  <h1>Sq Value For Money</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q9 -->
+  <section id="q9" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q9. Where is “value for money” praised vs. criticized?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To inform pricing policy decisions, optimize bundle passes, and identify discount opportunities.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Perform topic and sentiment analysis focused on terms such as “price”, “expensive”, “cheap”, “worth it”.</li>
+      <li>Compare frequency and polarity of “value” mentions across attractions and time periods.</li>
+      <li>Estimate price-sensitivity or perceived fairness metrics as elasticity proxies.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Value perception heatmap highlighting satisfaction by pricing sentiment.</li>
+      <li>Attraction-level “value index” leaderboard.</li>
+      <li>Elasticity or satisfaction–price correlation charts.</li>
+    </ul>
+
+    <div id="chart-q9" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for value-perception map visualization.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q10 -->
+  <section id="q10" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q10. Which add-ons (guides, skip-the-line, audio) improve perceived value?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To optimize product packaging, cross-selling, and upselling strategies for attractions and partners.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Identify reviews mentioning add-on keywords (“guided tour”, “skip the line”, “audio guide”, etc.).</li>
+      <li>Measure rating differentials and sentiment uplift between users who mention add-ons vs. those who don’t.</li>
+      <li>Analyze co-occurrence networks to detect synergistic product bundles.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Impact charts showing rating uplift by add-on type.</li>
+      <li>Bundle recommendation matrix suggesting profitable combinations.</li>
+      <li>ROI or perceived value improvement estimates (proxy level).</li>
+    </ul>
+
+    <div id="chart-q10" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for add-on impact analysis visualization.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}
