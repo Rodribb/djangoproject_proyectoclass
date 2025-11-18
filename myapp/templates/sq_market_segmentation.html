@@ -1,6 +1,68 @@
 {% extends 'base.html' %}
-{% block title %}Sq Market Segmentation{% endblock %}
+
+{% block title %}Market Segmentation & Visitor Profiles{% endblock %}
+
 {% block content %}
-  <h1>Sq Market Segmentation</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q7 -->
+  <section id="q7" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q7. Which nationalities/language groups are most satisfied, and where are the gaps?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To tailor visitor information, signage, and marketing campaigns to each linguistic or cultural segment.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Language detection on review text to identify nationality or language group.</li>
+      <li>Geo-inference from user profiles or linguistic patterns.</li>
+      <li>Calculate per-segment satisfaction KPIs (mean rating, sentiment score, complaint ratio).</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Segment scorecards comparing satisfaction levels by nationality/language.</li>
+      <li>Heatmaps revealing service quality gaps across visitor groups.</li>
+      <li>Translation and localization priority matrix for multilingual optimization.</li>
+    </ul>
+
+    <div id="chart-q7" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for satisfaction by nationality/language chart.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q8 -->
+  <section id="q8" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q8. How do first-time vs. repeat visitors differ in needs and sentiment?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To improve product-market fit and tailor the experience for both newcomers and loyal visitors.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Detect self-reported status in text (e.g., “first time”, “came again”, “return visit”).</li>
+      <li>Cluster reviews by behavioral patterns or visit frequency indicators.</li>
+      <li>Compare satisfaction, sentiment, and topic emphasis between both groups.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Journey comparison charts between first-time and repeat visitors.</li>
+      <li>Segmented sentiment bars or spider charts showing emotional tone differences.</li>
+      <li>Targeted messaging strategies to strengthen loyalty and first impressions.</li>
+    </ul>
+
+    <div id="chart-q8" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for first-time vs. repeat visitor sentiment comparison.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}

@@ -1,6 +1,69 @@
 {% extends 'base.html' %}
-{% block title %}Sq Content Quality{% endblock %}
+
+{% block title %}Content & Experience Insights{% endblock %}
+
 {% block content %}
-  <h1>Sq Content Quality</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q13 -->
+  <section id="q13" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q13. Do visitors find exhibits/descriptions engaging and clear?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To enhance education outcomes and maximize cultural heritage value.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Analyze mentions of “guide”, “audio guide”, “exhibit”, “label” in visitor feedback.</li>
+      <li>Evaluate sentiment, comment length, and level of engagement.</li>
+      <li>Identify content gaps or areas of confusion across exhibits.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Content improvement backlog prioritized by visitor impact.</li>
+      <li>Language and localization priorities for labels and guides.</li>
+      <li>Recommendations for exhibit engagement enhancements.</li>
+    </ul>
+
+    <div id="chart-q13" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for exhibit engagement and clarity analysis chart.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q14 -->
+  <section id="q14" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q14. Which tours or experiences receive the most praise/criticism?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To curate best-practice formats and optimize visitor satisfaction across tours and experiences.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Extract entities related to tour types or experience formats.</li>
+      <li>Compare ratings and sentiment across tour categories.</li>
+      <li>Detect patterns of praise and recurring complaints for each tour type.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Top- and bottom-performing tours and experiences.</li>
+      <li>Design pattern recommendations for future tours or enhancements.</li>
+      <li>Insights to guide staff training and content adjustments.</li>
+    </ul>
+
+    <div id="chart-q14" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for tour/experience sentiment and rating analysis.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}
+

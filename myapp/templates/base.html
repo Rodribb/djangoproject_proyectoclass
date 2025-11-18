@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  {% load static %}
+  <link href="{% static 'css/tailwind.css' %}" rel="stylesheet">
+
+
     <title>{% block title %}My Project{% endblock %}</title>
     <style>
       body {

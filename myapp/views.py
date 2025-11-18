@@ -56,3 +56,8 @@ def sq_monitoring(request):
 
 def kore_kpis(request):
     return render(request,'kore_kpis.html')
+
+def show_notebook(request):
+    return render(request, 'notebooks/reviews_words.html')
+
+

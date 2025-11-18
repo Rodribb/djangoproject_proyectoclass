@@ -1,6 +1,68 @@
 {% extends 'base.html' %}
-{% block title %}Sq Journey{% endblock %}
+
+{% block title %}Accessibility & Onsite Comfort{% endblock %}
+
 {% block content %}
-  <h1>Sq Journey</h1>
-  <p>This page will include details for this strategic question.</p>
+<div class="container mx-auto px-6 py-10">
+
+  <!-- Q15 -->
+  <section id="q15" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q15. Are directions, transport links, and wayfinding adequate?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To reduce visitor friction before arrival and distribute flows efficiently across the site.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Analyze mentions of “tram”, “bus”, “parking”, and “signs” in visitor feedback.</li>
+      <li>Perform geospatial joins to identify problem areas.</li>
+      <li>Detect recurring bottlenecks and wayfinding issues.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Map highlighting transport and wayfinding pain points.</li>
+      <li>Signage and routing improvement recommendations.</li>
+    </ul>
+
+    <div id="chart-q15" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for transport and wayfinding analysis map.
+    </div>
+
+    <hr class="my-6 border-gray-300">
+  </section>
+
+  <!-- Q16 -->
+  <section id="q16" class="mb-12">
+    <h1 class="text-2xl font-bold mb-4">Q16. What nearby amenities (food, restrooms, shade) need attention?</h1>
+
+    <h2 class="text-lg font-semibold">Why</h2>
+    <p class="mb-4 italic">
+      To ensure onsite comfort, improve dwell time, and enhance overall visitor experience.
+    </p>
+
+    <h2 class="text-lg font-semibold">How</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>Analyze co-mentions of amenities like food, restrooms, and shaded areas in reviews.</li>
+      <li>Conduct sentiment analysis to detect dissatisfaction or gaps.</li>
+      <li>Identify areas lacking sufficient amenities.</li>
+    </ul>
+
+    <h2 class="text-lg font-semibold">Outputs</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li>List of amenity gaps per site or attraction.</li>
+      <li>Recommendations for adding/restocking amenities.</li>
+      <li>Prioritization based on visitor impact and sentiment severity.</li>
+    </ul>
+
+    <div id="chart-q16" class="bg-gray-50 border rounded-xl p-4 text-center text-gray-600 italic">
+      Placeholder for amenities gap and sentiment analysis.
+    </div>
+
+  </section>
+
+</div>
 {% endblock %}
+

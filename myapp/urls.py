@@ -18,7 +18,8 @@ urlpatterns = [
     path('sq/benchmarking/', views.sq_benchmarking, name='sq_benchmarking'),
     path('sq/communications/', views.sq_communications, name='sq_communications'),
     path('sq/monitoring/', views.sq_monitoring, name='sq_monitoring'),
-    path('kore_kpis/', views.kore_kpis, name='kore_kpis')
+    path('kore_kpis/', views.kore_kpis, name='kore_kpis'),
+    path('home/notebook/', views.show_notebook, name='show_notebook'),
 ]
 
     
